@@ -1,3 +1,4 @@
+// Write a program in “C” Language to find out the root of the Algebraic and Transcendental equations using Iteration Method.
 #include<stdio.h>
 #include<math.h>
 #define f(x) cos(x)-(3*x)+1
