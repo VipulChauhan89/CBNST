@@ -1,3 +1,4 @@
+// Write a program in “C” Language to find out the root of the Algebraic and Transcendental equations using Secant Method.
 #include<stdio.h>
 #include<math.h>
 #define f(x) (x*exp(x))- cos(x)
