@@ -1,3 +1,4 @@
+// Write a program in “C” Language to find out the root of the Algebraic and Transcendental equations using Newton Raphson Method.
 #include<stdio.h>
 #include<math.h>
 #define f(x) (3*x)-cos(x)-1
