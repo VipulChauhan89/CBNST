@@ -22,17 +22,14 @@ int main()
         printf("Wrong value of x0\n");
         return 0;
     }
-    while(1)
+    x1=x0;
+    do
     {
+        x0=x1;
         x1=o(x0);
         i++;
         printf("Root at iteration %d = %f\n",i,x1);
-        if(fabs(x0-x1)<e)
-        {
-            printf("\nFinal root after %d iteration = %f\n",i,x1);
-            break;
-        }
-        x0=x1;
-    }
+    }while(fabs(x0-x1)>e);
+    printf("\nFinal root after %d iteration = %f\n",i,x1);
     return 0;
 }
