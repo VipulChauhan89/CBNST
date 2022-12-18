@@ -9,12 +9,12 @@ int main ()
     float xi,yi,x,y,h; 
     printf("Enter the value of n : ");
     scanf("%d",&n);
-	printf("\nEnter the initial condition for x and y :  "); 
+	printf("Enter the initial condition for x and y :  "); 
 	scanf("%f%f",&xi,&yi); 
-	printf("\nEnter the value of x for which y is needed : "); 
+	printf("Enter the value of x for which y is needed : "); 
 	scanf("%f",&x); 
 	h=(x-xi)/n; 
-	while (xi<x) 
+	while (xi<x && i<=n) 
 	{
 		y=yi+h*f(xi,yi); 
 		yi=y; 
@@ -22,6 +22,6 @@ int main ()
 		printf("x%d = %.4f\ty%d = %.4f\n",i,xi,i,yi);
 		i++;
 	}
-	printf("\nValue of y%d is: %f\n",i,y); 
+	printf("\nValue of y%d is = %.4f\n",i-1,y); 
 	return 0; 
 }
