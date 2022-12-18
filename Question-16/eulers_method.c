@@ -1,3 +1,4 @@
+// Write a program in “C” Language to find the numerical solution of ordinary differential equations by Euler’s Method.
 #include <stdio.h> 
 #include <math.h> 
 #define f(x,y) (y-x)/(y+x); 
