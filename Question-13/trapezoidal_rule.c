@@ -1,9 +1,6 @@
 // Write a program in “C” Language to integrate numerically using Trapezoidal Rule.
 #include<stdio.h>
-float value(float x)
-{
- 	return x*x*x;
-}
+#define f(x) x*x*x
 int main()
 {
 	int n;
@@ -13,10 +10,10 @@ int main()
 	printf("Enter the number of intervals : ");
 	scanf("%d",&n);
 	h=(b-a)/n;
-	sum=value(a)+value(b);
+	sum=f(a)+f(b);
 	for(i=a+h;i<b;i+=h)
 	{
-		sum+=2*value(i);
+		sum+=2*f(i);
 	}
 	sum=(h*sum)/2;
 	printf("\nValue of the integral = %f\n",sum);
