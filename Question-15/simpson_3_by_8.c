@@ -1,9 +1,6 @@
 // Write a program in “C” Language to integrate numerically using Simpson’s 3/8 Rule.
 #include<stdio.h>
-float value(float x)
-{
- 	return 1/(1+x*x);
-}
+#define f(x) 1/(1+x*x)
 int main()
 {
 	int n,position_of_term=1;
@@ -13,10 +10,10 @@ int main()
 	printf("Enter the number of intervals : ");
 	scanf("%d",&n);
 	h=(b-a)/n;
-	sum=value(a)+value(b);
+	sum=f(a)+f(b);
 	for(i=a+h;i<b;i+=h)
 	{
-		sum+=(position_of_term%3==0)?2*value(i):3*value(i);
+		sum+=(position_of_term%3==0)?2*f(i):3*f(i);
 		position_of_term++;
 	}
 	sum=(h*sum*3)/8;
