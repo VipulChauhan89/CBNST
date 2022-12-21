@@ -1,4 +1,3 @@
-// Write a program in “C” Language to interpolate numerically using Lagrange’s Method.
 #include<stdio.h>
 int main()
 {
@@ -28,8 +27,8 @@ int main()
 			{
 				term=term*((x-X[j])/(X[i]-X[j]));
 			}
-			sum=sum+term*Y[i];
 		}
+		sum=sum+term*Y[i];
 	}
 	printf("\nValue of Y at x=%g is = %f\n",x,sum);
 	return 0;
